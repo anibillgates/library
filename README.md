@@ -4,6 +4,7 @@ This application is simple book Networking system.
 
 Language : PHP/ Codeignitor
 DB : Mysql
+PHP version : 7.4 =<
 
 
 Download and integrate in your local system
