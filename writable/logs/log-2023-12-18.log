@@ -1,0 +1,1628 @@
+ERROR - 2023-12-18 05:24:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(403): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1112): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:24:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(403): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1112): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 6 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, GROUP...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(906): App\Models\IdeaModel->call_for_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 6
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP_CONCAT(DISTINCT(T3.emp_name)) as call_emp_names, GROUP_CONCAT(DISTINCT(depart)) as department_names, count(call_idea_comments_pid) as count_comment
+FROM `list_of_call_idea` as `T1`
+LEFT JOIN `employee_depart` as `T2` ON FIND_IN_SET(T2.id,T1.call_idea_department) > 0
+LEFT JOIN `employee_personal` as `T3` ON FIND_IN_SET(T3.employee_id,T1.call_idea_user_name) > 0
+LEFT JOIN `list_of_call_idea_comments` as `T4` ON `T4`.`call_idea_comments_call_idea_pid` = `T1`.`call_idea_pid`
+WHERE ((FIND_IN_SET(,T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_idea_invite_type` = "Open To All") AND `T1`.`call_idea_delete` = "Active" AND `T1`.`call_idea_closure_date` >= "2023-12-18")
+GROUP BY `call_idea_pid`
+ORDER BY `call_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(161): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(906): App\Models\IdeaModel->call_for_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`su...' at line 5 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(233): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(989): App\Models\IdeaModel->submit_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->submit_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`su...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `submit_ideas` as `T1`
+LEFT JOIN `list_of_category` as `T2` ON `T2`.`category_id` = `T1`.`submit_idea_category`
+LEFT JOIN `idea_execution_interests` as `T3` ON `T3`.`idea_exe_pid` = `T1`.`submit_idea_execution_intrest`
+WHERE ((FIND_IN_SET(,T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`submit_idea_is_delete` = "Active")
+ORDER BY `submit_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(233): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(989): App\Models\IdeaModel->submit_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->submit_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:23:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:23:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`su...' at line 5 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(233): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(989): App\Models\IdeaModel->submit_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->submit_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`su...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `submit_ideas` as `T1`
+LEFT JOIN `list_of_category` as `T2` ON `T2`.`category_id` = `T1`.`submit_idea_category`
+LEFT JOIN `idea_execution_interests` as `T3` ON `T3`.`idea_exe_pid` = `T1`.`submit_idea_execution_intrest`
+WHERE ((FIND_IN_SET(,T2.category_employee_list)  OR `T1`.`submit_idea_proposer` = "") AND `T1`.`submit_idea_is_delete` = "Active")
+ORDER BY `submit_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(233): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(989): App\Models\IdeaModel->submit_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->submit_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:24:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 6 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, GROUP...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(906): App\Models\IdeaModel->call_for_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:24:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 6
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP_CONCAT(DISTINCT(T3.emp_name)) as call_emp_names, GROUP_CONCAT(DISTINCT(depart)) as department_names, count(call_idea_comments_pid) as count_comment
+FROM `list_of_call_idea` as `T1`
+LEFT JOIN `employee_depart` as `T2` ON FIND_IN_SET(T2.id,T1.call_idea_department) > 0
+LEFT JOIN `employee_personal` as `T3` ON FIND_IN_SET(T3.employee_id,T1.call_idea_user_name) > 0
+LEFT JOIN `list_of_call_idea_comments` as `T4` ON `T4`.`call_idea_comments_call_idea_pid` = `T1`.`call_idea_pid`
+WHERE ((FIND_IN_SET(,T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_idea_invite_type` = "Open To All") AND `T1`.`call_idea_delete` = "Active" AND `T1`.`call_idea_closure_date` >= "2023-12-18")
+GROUP BY `call_idea_pid`
+ORDER BY `call_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(161): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(906): App\Models\IdeaModel->call_for_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:02 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:02 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:04 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:04 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:09 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:09 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:14 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:14 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:15 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:15 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:16 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:16 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:22 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:22 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:27 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:27 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:32 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:32 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:37 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:37 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:42 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:42 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:46 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:46 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:47 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:47 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:50 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:50 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:25:55 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:25:55 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:00 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:00 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:05 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:05 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:10 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:10 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:15 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:15 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:20 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:20 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:25 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:25 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:30 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:30 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:35 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:35 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:40 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:40 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:45 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:45 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:50 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:50 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:26:55 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:26:55 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:00 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:00 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:05 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:05 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:10 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:10 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:15 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:15 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:20 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:20 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:26 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:26 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:30 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:30 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:35 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:35 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:40 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:40 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:45 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:45 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:50 --> mysqli_sql_exception: Table 'idea_generation.idea_notification' doesn't exist in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:50 --> Table 'idea_generation.idea_notification' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(1881,note_receiver_emp_id) AND !FIND_IN_SET(1881,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count('1881')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:27:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:27:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:28:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:28:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 12:28:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 12:28:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(405): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1114): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

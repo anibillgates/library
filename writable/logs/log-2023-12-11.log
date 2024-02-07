@@ -1,0 +1,52 @@
+ERROR - 2023-12-11 06:31:28 --> mysqli_sql_exception: Column 'submit_idea_discription' cannot be null in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(85): App\Models\IdeaModel->InsertData('submit_ideas', Array)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 06:31:28 --> Column 'submit_idea_discription' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `submit_ideas` (`submit_idea_title`, `submit_idea_discription`, `submit_idea_category`, `submit_idea_execution_intrest`, `submit_idea_execution_comment`, `submit_idea_proposed_timeofexecution`, `submit_idea_people_for_execution`, `submit_idea_proposed_perquisite`, `submit_idea_other_support`, `submit_idea_attachments`, `submit_idea_submitted_date_time`, `submit_idea_proposer`, `submit_idea_is_delete`) VALUES (:submit_idea_title:, :submit_idea_discription:, :submit_idea_category:, :submit_idea_execution_intrest:, :submit_idea_execution_comment:, :submit_idea_proposed_timeofexecution:, :submit_idea_people_for_execution:, :submit_idea_proposed_perquisite:, :submit_idea_other_support:, :submit_idea_attachments:, :submit_idea_submitted_date_time:, :submit_idea_proposer:, :submit_idea_is_delete:)', [...], false)
+ 2 APPPATH\Models\IdeaModel.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Idea.php(85): App\Models\IdeaModel->InsertData('submit_ideas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 07:52:17 --> Call to a member function library() on null
+in APPPATH\Controllers\Idea.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 10:23:52 --> Call to a member function initialize() on null
+in APPPATH\Controllers\Idea.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 10:25:15 --> Call to a member function initialize() on null
+in APPPATH\Controllers\Idea.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 10:27:56 --> Call to a member function initialize() on null
+in APPPATH\Controllers\Idea.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 10:28:47 --> Call to a member function initialize() on null
+in APPPATH\Controllers\Idea.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->FormActionOfsubmitIdea()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

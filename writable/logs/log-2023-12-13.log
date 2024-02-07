@@ -1,0 +1,87 @@
+ERROR - 2023-12-13 12:26:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, GROUP...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-13 12:26:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP_CONCAT(DISTINCT(T3.emp_name)) as call_emp_names, GROUP_CONCAT(DISTINCT(depart)) as department_names
+FROM `list_of_call_idea` as `T1`
+LEFT JOIN `employee_depart` as `T2` ON FIND_IN_SET(T2.id,T1.call_idea_department) > 0
+LEFT JOIN `employee_personal` as `T3` ON FIND_IN_SET(T3.employee_id,T1.call_idea_user_name) > 0
+WHERE ((FIND_IN_SET(,T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_idea_invite_type` = "Open To All") AND `T1`.`call_idea_delete` = "Active" AND `T1`.`call_idea_closure_date` >= "2023-12-13")
+GROUP BY `call_idea_pid`
+ORDER BY `call_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 12:26:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, GROUP...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-13 12:26:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP_CONCAT(DISTINCT(T3.emp_name)) as call_emp_names, GROUP_CONCAT(DISTINCT(depart)) as department_names
+FROM `list_of_call_idea` as `T1`
+LEFT JOIN `employee_depart` as `T2` ON FIND_IN_SET(T2.id,T1.call_idea_department) > 0
+LEFT JOIN `employee_personal` as `T3` ON FIND_IN_SET(T3.employee_id,T1.call_idea_user_name) > 0
+WHERE ((FIND_IN_SET(,T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_idea_invite_type` = "Open To All") AND `T1`.`call_idea_delete` = "Active" AND `T1`.`call_idea_closure_date` >= "2023-12-13")
+GROUP BY `call_idea_pid`
+ORDER BY `call_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 12:26:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, GROUP...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists(Array, NULL, NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-13 12:26:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_i...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP_CONCAT(DISTINCT(T3.emp_name)) as call_emp_names, GROUP_CONCAT(DISTINCT(depart)) as department_names
+FROM `list_of_call_idea` as `T1`
+LEFT JOIN `employee_depart` as `T2` ON FIND_IN_SET(T2.id,T1.call_idea_department) > 0
+LEFT JOIN `employee_personal` as `T3` ON FIND_IN_SET(T3.employee_id,T1.call_idea_user_name) > 0
+WHERE ((FIND_IN_SET(,T1.call_idea_user_name) OR `T1`.`call_idea_user_name` = "All" OR `T1`.`call_idea_invite_type` = "Open To All") AND `T1`.`call_idea_delete` = "Active" AND `T1`.`call_idea_closure_date` >= "2023-12-13")
+GROUP BY `call_idea_pid`
+ORDER BY `call_idea_pid` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\IdeaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(533): App\Models\IdeaModel->call_for_idea_lists([...], null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->call_for_idea_lists()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

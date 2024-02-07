@@ -1,0 +1,384 @@
+ERROR - 2024-01-03 07:50:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 07:50:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 07:50:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(569): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 11:30:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'category_employee_list) AND `category_is_delete` = "Active")' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(91): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(802): App\Models\IdeaModel->getAllData('list_of_categor...', '(FIND_IN_SET(,c...')
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->list_of_submit_idea()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 11:30:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'category_employee_list) AND `category_is_delete` = "Active")' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `list_of_category`
+WHERE (FIND_IN_SET(,category_employee_list) AND `category_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(91): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(802): App\Models\IdeaModel->getAllData('list_of_category', '(FIND_IN_SET(,category_employee_list) AND category_is_delete = "Active")')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->list_of_submit_idea()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 12:41:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 12:41:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 12:41:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 12:41:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 12:41:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 12:41:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 12:41:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 12:41:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 12:41:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3 in D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\idea\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\idea\app\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\idea\app\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(NULL)
+#6 D:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+#7 D:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 D:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 12:41:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `idea_notification`
+WHERE (FIND_IN_SET(,note_receiver_emp_id) AND !FIND_IN_SET(,note_read_emp_id) AND `note_is_delete` = "Active")', [], false)
+ 2 APPPATH\Models\IdeaModel.php(570): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Idea.php(1637): App\Models\IdeaModel->get_notification_count(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->get_notification_count()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

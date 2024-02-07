@@ -1,0 +1,39 @@
+ERROR - 2023-12-07 10:46:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'idea_generation' in E:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'idea_generation', 3306, '', 0)
+#1 E:\xampp\htdocs\idea\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\idea\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\idea\app\Models\IdeaModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\idea\app\Controllers\Idea.php(30): App\Models\IdeaModel->fetchData('employee_person...', Array)
+#6 E:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->login()
+#7 E:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#8 E:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'idea_generation' in E:\xampp\htdocs\idea\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xampp\htdocs\idea\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\idea\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\idea\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xampp\htdocs\idea\app\Models\IdeaModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xampp\htdocs\idea\app\Controllers\Idea.php(30): App\Models\IdeaModel->fetchData('employee_person...', Array)
+#5 E:\xampp\htdocs\idea\system\CodeIgniter.php(942): App\Controllers\Idea->login()
+#6 E:\xampp\htdocs\idea\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+#7 E:\xampp\htdocs\idea\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\idea\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 10:46:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'idea_generation'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee_personal`
+WHERE `employee_id` = :employee_id:', [...], false)
+ 3 APPPATH\Models\IdeaModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Idea.php(30): App\Models\IdeaModel->fetchData('employee_personal', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Idea->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Idea))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
