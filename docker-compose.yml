@@ -1,25 +1,61 @@
-version: '3'
+version: "3"
+
 services:
-    web:
-        container_name: ci4-web
-        build:
-            context: ./php
-        ports:
-            - 80:80
-        volumes:
-            - ../app:/var/www/html/app/
-            - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
-        links:
-            - mysql
-        depends_on:
-          - mysql
-    mysql:
-        container_name: test_book_network
-        image: mysql:latest
-        volumes:
-            - ./db:/var/lib/mysql
-        command: --default-authentication-plugin=mysql_native_password
-        ports:
-            - 3306:3306
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#                     C O D E I G N I T E R  v4.2.3                        #
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+    library:
+        # image: atsanna/codeigniter4:latest
+#        image: atsanna/codeigniter4:v4.2.3-php8.1-apache
+#        image: atsanna/codeigniter4:v4.2.3-php8.1.9-apache
+#        image: atsanna/codeigniter4:v4.2.3-php8.0-apache
+#        image: atsanna/codeigniter4:v4.2.3-php8.0.20-apache
+#        image: atsanna/codeigniter4:v4.2.3-php7.4-apache
+#        image: atsanna/codeigniter4:v4.2.3-php7.4.30-apache
+        container_name: 'library'
         environment:
-            MYSQL_ROOT_PASSWORD: root
+          - REGEN_ENV_FILE=1
+
+          - CI_ENVIRONMENT=development
+          - APP_BASE_URL=https://${localhost}/
+          - DB_DEFAULT_HOSTNAME=${localhost}
+          - DB_DEFAULT_DATABASE=${test_book_network}
+          - DB_DEFAULT_USERNAME=${root}
+          - DB_DEFAULT_PASSWORD=${a}
+          - DB_DEFAULT_DRIVER=MySQLi
+          - DB_DEFAULT_PORT=3306
+
+          - ROOT_EMAIL=${EMAIL_ROOT}
+          - MAIL_SERVER=${MAIL_SERVER}
+          - MAIL_SERVER_PORT=${MAIL_SERVER_PORT}
+          - MAIL_SERVER_USER=${MAIL_SERVER_USER}
+          - MAIL_SERVER_PASSWORD=${MAIL_SERVER_PASSWORD}
+          - MAIL_SERVER_TLS=${MAIL_SERVER_TLS}
+          - MAIL_SERVER_STARTTLS=${MAIL_SERVER_STARTTLS}
+        ports:
+          - 80:80
+        links:
+          - codeigniter4_mysql
+        volumes:
+          - ./D/www:/var/www/html
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#                               M Y S Q L                                  #
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#               
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#                         P H P M Y A D M I N                              #
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#             
+    codeigniter4_phpmyadmin:
+        image: phpmyadmin/phpmyadmin:5.0.2
+        links:
+          - codeigniter4_mysql
+        ports:
+          - 81:80
+        volumes:
+          - ./D/sessions:/sessions
