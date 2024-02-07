@@ -1,6 +1,6 @@
 # library
 
-This application is simple book Networking system.
+This is simple book Networking system.
 
 Language : PHP/ Codeignitor
 DB : Mysql
@@ -27,3 +27,8 @@ OR
 
 username = user2@gmail.com
 password = user2
+
+
+add the books.
+added books are display in the dashboard page.
+you can view/ delete the books which is created by you.
